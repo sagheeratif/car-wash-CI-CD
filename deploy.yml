@@ -1,0 +1,29 @@
+---
+- name: car wash web app
+  hosts: localhost
+  become: yes  # Enables sudo for tasks without prompting for a password
+
+  tasks:
+    - name: apache install
+      yum:
+        name: httpd
+        state: present
+
+    - name: Start Apache
+      service:
+        name: httpd
+        state: started
+        enabled: yes
+
+    - name: Copyfiles
+      copy:
+        src: "{{ playbook_dir }}/"
+        dest: /var/www/html/
+        owner: apache
+        group: apache
+        mode: '0644'
+
+    - name: Restart Apache
+      service:
+        name: httpd
+        state: restarted

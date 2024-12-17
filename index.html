@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kendra Car Wash - Book an Appointment</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        h1 {
+            color: #6a0dad;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2.5rem;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #6a0dad;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            color: #fff;
+            margin: 0 20px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #ffdd57;
+        }
+
+        /* Appointment Section */
+        .appointment-section {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .appointment-section form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .appointment-section label {
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+
+        .appointment-section input {
+            padding: 8px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .appointment-section button {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #fff;
+            background-color: #6a0dad;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .appointment-section button:hover {
+            background-color: #580b8d;
+        }
+
+        /* Image Gallery */
+        .gallery {
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #6a0dad;
+            color: #fff;
+            padding: 10px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Book an Appointment</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <!-- Page Title -->
+    <h1>Kendra Car Wash Website</h1>
+
+    <!-- Appointment Section -->
+    <section class="appointment-section">
+        <h2>Book an Appointment</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="vehicle">Vehicle #</label>
+            <input type="text" id="vehicle" placeholder="Enter your vehicle number" required>
+
+            <label for="datetime">Date & Time</label>
+            <input type="datetime-local" id="datetime" required>
+
+            <button type="submit">Save Appointment</button>
+            <button type="reset" style="background-color: #ccc; color: #333;">Cancel</button>
+        </form>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <h2 style="color: #6a0dad;">Our Services</h2>
+        <img src="1.jpeg" alt="Car Wash 1">
+        <img src="2.jpeg" alt="Car Wash 2">
+        <img src="3.jpeg" alt="Car Interior Cleaning">
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Kendra Car Wash. All rights reserved.</p>
+    </footer>
+</body>
+</html>
